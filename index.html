@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <h1>Rock Paper Scissors Game</h1>
+        <div class="headinger">
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username" placeholder="User" style="font-size: 18px;">
+        <button id="start-button" style="font-weight: bold; font-size: 18px;">Start Game</button>
+        <br><br><br>
+    </div>
+    <div class="upperfont">
+      <div style="size: 100px; border: 2px solid black;">GAME STAT   &nbsp;&nbsp;&nbsp;&nbsp;:</div>
+    <p><strong>🧒🏻Your Score: </strong> <span id="user-score">0</span></p>
+    <p><strong>💻Computer Score: </strong><span id="computer-score">0</span></p>
+  </div>
+    <div class="choices">
+      <div class="choice" id="rock">
+              <img
+              src="rock.gif"
+              alt="Rock" style="border:2px solid black; border-radius: 20px;"
+              
+              />
+            </div>
+            <div class="choice" id="paper">
+              <img
+              src="paper.gif"
+              alt="Paper" style="border:2px solid black; border-radius: 20px;"
+              
+              />
+            </div>
+            <div class="choice" id="scissors">
+              <img
+              src="sccc.gif"
+              alt="Scissors" style="border:2px solid black; border-radius: 20px;"
+              />
+            </div>
+          </div>
+        
+          <p id="result"></p>
+          <div class="sidemargin">
+            <div class="title">Leaderboard</div>
+            <ul type="circle" id="results-list"></ul>
+          </div>
+<script src="script.js"></script>
+</body>
+</html>
